@@ -1,7 +1,7 @@
 /* screen size: Desktop(992px) */
 @media screen and (max-width: 992px){
     main{
-        width: 100%;
+        width: 100% !important;
         flex-direction: column;
         align-items: center !important;
         justify-content: center !important;
@@ -46,7 +46,7 @@
     }
 
     main {
-        width: 100%;
+        width: 100% !important;
         align-items: center !important;
         justify-content: center !important;
         flex-direction: column;
