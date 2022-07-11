@@ -2,90 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  
-/* screen size: Desktop(992px) */
-@media screen and (max-width: 992px) {
-  main {
-    width: 100% !important;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .caption-container h1 {
-    text-align: center;
-    font-size: 30px !important;
-  }
-
-  .caption-container p {
-    text-align: center;
-    margin: auto !important;
-    padding: 0 75px;
-  }
-
-  .discount-button button {
-    padding: 20px 0 !important;
-    font-size: 16px;
-    height: inherit !important;
-    line-height: 1.5;
-  }
-
-  .form-section {
-    width: 100% !important;
-    padding: 20px !important;
-    margin-bottom: 80px !important;
-  }
-
-  .form-section p {
-    font-size: 12px !important;
-    text-align: center !important;
-  }
-}
-
-/* screen size: Mobile(600px) */
-@media screen and (max-width: 600px) {
-  body {
-    background-image: url(img/bg-intro-mobile.png);
-  }
-
-  main {
-    width: 100% !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-direction: column;
-    /* padding: 5px; */
-  }
-
-  .caption-container h1 {
-    text-align: center;
-    font-size: 40px !important;
-    margin-top: 250px !important;
-  }
-
-  .caption-container p {
-    text-align: center;
-    font-size: 15px !important;
-    margin: auto !important;
-  }
-
-  .discount-button button {
-    padding: 20px 55px !important;
-    font-size: 16px;
-    height: inherit !important;
-    line-height: 1.5;
-  }
-
-  .form-section {
-    width: 100% !important;
-    padding: 10px !important;
-    margin-bottom: 80px !important;
-  }
-
-  .form-section p {
-    font-size: 12px !important;
-    text-align: center !important;
-  }
 }
 
 body {
@@ -98,11 +14,16 @@ body {
 main {
   display: flex;
   justify-content: center;
-  width: 65%;
+  width: 95%;
   margin: auto;
   align-items: center;
   height: 100vh;
-  gap: 40px;
+  gap: 50px;
+}
+
+.caption-container{
+  padding: 20px;
+  width: 40%;
 }
 
 .caption-container h1 {
@@ -123,6 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  width: 35%;
 }
 
 .discount-button button {
@@ -139,7 +61,7 @@ main {
 .form-section {
   padding: 40px;
   border-radius: 10px;
-  width: 470px;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 0.25);
 }
@@ -176,4 +98,153 @@ input {
   color: rgba(128, 128, 128, 0.535);
   margin: 0 0 10px 0;
   text-align: center;
+}
+
+/* screen size: Desktop(1440px) */
+@media screen and (max-width: 1440px) {
+  main {
+    width: 85%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .caption-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 50%;
+  }
+
+    .right-container{
+      width: 50%;
+      padding: 20px;
+  }
+
+
+  .caption-container h1 {
+    font-size: 40px;
+  }
+
+  .discount-button button {
+    padding: 20px 0;
+    font-size: 16px;
+    height: inherit;
+    line-height: 1.5;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+
+  .form-section p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+/* screen size: Desktop(992px) */
+@media screen and (max-width: 992px) {
+  main {
+    width: 95%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .caption-container {
+    width: 100%;
+  }
+
+  .right-container{
+    width: 100%;
+  }
+
+  .caption-container h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 100px 0 20px;
+  }
+
+  .caption-container p {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .discount-button button {
+    padding: 20px 0;
+    font-size: 16px;
+    height: inherit;
+    line-height: 1.5;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+
+  .form-section p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* screen size: Mobile(600px) */
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(img/bg-intro-mobile.png);
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .caption-container {
+    width: 100%;
+  }
+
+  .right-container{
+    width: 100%;
+  }
+  .caption-container h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+  }
+
+  .caption-container p {
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .discount-button button {
+    padding: 20px 55px;
+    font-size: 16px;
+    height: inherit;
+    line-height: 1.5;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 80px;
+  }
+
+  .form-section p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
