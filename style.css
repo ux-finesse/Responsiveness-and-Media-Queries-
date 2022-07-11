@@ -30,21 +30,20 @@ main {
   line-height: 1.2;
   font-size: 50px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .caption-container p {
   font-size: 16px;
   color: white;
   margin: 0 0 20px 0;
-  /* width: 85%; */
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 35%;
+  width: 40%;
 }
 
 .discount-button button {
@@ -59,7 +58,7 @@ main {
 }
 
 .form-section {
-  padding: 40px;
+  padding: 30px 40px;
   border-radius: 10px;
   width: 100%;
   background-color: white;
@@ -72,11 +71,21 @@ input {
   margin: 10px 0;
   width: 100%;
   font-size: 12px;
+  outline: none;
   font-weight: 400;
   color: #000;
   height: 50px;
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.265);
+}
+
+input:focus{
+  border: 1px solid rgb(47, 46, 51);
+}
+
+::placeholder{
+  color: rgb(47, 46, 51);
+  font-weight: 600;
 }
 
 .form-section button {
@@ -86,8 +95,9 @@ input {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
-  border: 1.5px solid rgba(128, 128, 128, 0.265);
+  border: 1px solid rgba(128, 128, 128, 0.265);
   color: white;
+  border-bottom: 4px solid rgba(128, 128, 128, 0.265);
   border-radius: 5px;
   font-size: 14px;
   background-color: hsl(154, 59%, 51%);
@@ -95,8 +105,8 @@ input {
 
 .form-section p {
   font-size: 10px;
-  color: rgba(128, 128, 128, 0.535);
-  margin: 0 0 10px 0;
+  color: rgba(128, 128, 128, 0.691);
+  margin: 10px 0 10px;
   text-align: center;
 }
 
@@ -125,7 +135,7 @@ input {
 
 
   .caption-container h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .discount-button button {
@@ -137,7 +147,6 @@ input {
 
   .form-section {
     width: 100%;
-    padding: 20px;
     margin-bottom: 80px;
   }
 
@@ -186,7 +195,6 @@ input {
 
   .form-section {
     width: 100%;
-    padding: 20px;
     margin-bottom: 80px;
   }
 
@@ -239,7 +247,7 @@ input {
 
   .form-section {
     width: 100%;
-    padding: 10px;
+    padding: 15px 25px;
     margin-bottom: 80px;
   }
 
